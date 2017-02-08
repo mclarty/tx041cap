@@ -6,7 +6,9 @@ layout: page
 
 ### The George H. W. Bush Composite Squadron
 
-In early 2009, a remote flight of the Lone Star Composite Squadron, located in Brenham, Texas, was formed in College Station. Asked to decide on a name for the squadron, the members decided on “George H. W. Bush”. The members wrote to the former President asking for his sponsorship, to which he agreed “with pleasure.”
+<span class="image right"><img src="/images/bush_charter.jpg" alt="" />President George H. W. Bush presents the CAP squadron charter to Lt Colonel Brooks Cima, Texas Wing Director of Emergency Services, on 31 March 2009</span>
+
+In early 2009, a remote flight of the Lone Star Composite Squadron, located in Brenham, Texas, was formed in College Station. Asked to decide on a name for the squadron, the members decided on “George H. W. Bush”. The members wrote to the former President asking for his sponsorship, to which he agreed "with pleasure."
 
 Shortly after noon on 31 March 2009 in a ceremony at the George Bush Presidential Library and Museum, former President George H. W. Bush presented its Civil Air Patrol charter to the George H. W. Bush Composite Squadron (SWR-TX-041).
 

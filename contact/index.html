@@ -1,0 +1,57 @@
+---
+layout: page
+---
+
+<style>
+ #map {
+   width: 60%;
+   height: 400px;
+   background-color: grey;
+ }
+</style>
+
+<h2>Contact</h2>
+
+<p><strong>
+{{ site.header_1 }}<br />
+{{ site.meeting_location }}<br />
+{{ site.meeting_address }}<br />
+{{ site.meeting_city }}, {{ site.meeting_state }} {{ site.meeting_zip }}<br />
+Phone: {{ site.phone_number }}
+</strong></p>
+
+<h3>Command Staff</h3>
+
+<p>
+<strong>Commander:</strong> <a href="mailto:{{ site.cc_email }}">{{ site.cc_name }}</a><br />
+<strong>Deputy Commander for Seniors:</strong> <a href="mailto:{{ site.cds_email }}">{{ site.cds_name }}</a><br />
+<strong>Deputy Commander for Cadets:</strong> <a href="mailto:{{ site.cdc_email }}">{{ site.cdc_name }}</a>
+</p>
+
+<h3>Meeting Schedule</h3>
+
+<p>{{ site.meeting_schedule }}</p>
+
+<h3>Meeting Location</h3>
+
+<p>{{ site.meeting_location_description }}</p>
+
+<div id="map"></div>
+
+<script>
+  function initMap() {
+    var uluru = {lat: {{ site.meeting_latitude }}, lng: {{ site.meeting_longitude }} };
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: {{ site.meeting_map_zoom }},
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key={{ site.gmap_api_key }}&callback=initMap">
+</script>
