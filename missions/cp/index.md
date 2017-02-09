@@ -4,6 +4,8 @@ layout: page
 
 ## Cadet Programs
 
+<span class="image right"><img src="/images/missions-cp.jpg" /></span>
+
 Civil Air Patrol's first cadet program was started during World War II as a way to provide training for future pilots. Since then, the program has flourished, combining Aerospace Education with Leadership and Career training.
 
 Today, CAP cadets are those members who join between their 12th and 18th birthday. Cadets who turn 18 may either become a Senior Member or remain a cadet until 21 at their own discretion. Cadets who join the military automatically become senior members when they receive their first orders.
@@ -15,3 +17,5 @@ As cadets advance through the ranks, they also progress through four stages of d
 As cadets progress through the program, they are placed in charge of lower ranking cadets. Cadets aren't given full reign over the others, but instead are expected to instruct classes and mentor each other. Senior Members, the adults of the program, also play a large role in mentoring and evaluating cadets. The numerous awards, achievements, and opportunities available to Civil Air Patrol cadets allows them to foster their leadership in an academic and forgiving environment.
 
 Civil Air Patrol also has several cadet squadrons located in middle schools. CAP's School Enrichment Program (formerly known as Middle School Initiative) is a ready-to-use program for teachers and other mentors conduct leadership training through Aerospace Education classes. Students are introduced to the principles of flight, model rocketry, and also leadership. CAP's SEP program is similar to a Junior ROTC program. CAP has 47 units located in Middle School classrooms throughout the country.
+
+_Read more about [Aerospace Education](/missions/ae) and [Emergency Services](/missions/es)._

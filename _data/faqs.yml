@@ -1,0 +1,27 @@
+- question: How old do I have to be to join?
+  answer: Senior Members must be at least 18 years old. There is no maximum age limit.
+  category:
+    - Adults
+    - Pilots
+- question: Am I expected to join the military?
+  answer: No, you do not have to join the military.
+  category:
+    - Adults
+    - Pilots
+- question: How old do I have to be to join?
+  answer: >
+    You can join CAP as a cadet if you are at least 12 years old and before your 19th 
+    birthday. Cadets can stay in the program until they turn 21 as long as they have 
+    not entered active duty and are enrolled in a school.
+  category:
+    - Cadets
+- question: Am I expected to join the military?
+  answer: >
+    No, you do not have to join the military, but many choose to do so. Cadets who 
+    earn the Billy Mitchell Award may enter the Air Force at an advanced grade (E-3) 
+    if they choose to enlist. The service academies and ROTC also look favorably on 
+    CAP experience. Approximately 10% of the USAF Academy cadet corps got their start 
+    in CAP. But no matter what career you choose, the skills you learn in CAP will be 
+    invaluable.
+  category:
+    - Cadets

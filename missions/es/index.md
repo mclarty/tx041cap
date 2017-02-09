@@ -4,6 +4,8 @@ layout: page
 
 ## Emergency Services
 
+<span class="image right"><img src="/images/missions-es.jpg" /></span>
+
 Civil Air Patrol covers several Emergency Services areas. The principal categories include search and rescue missions, disaster relief, humanitarian services, and Air Force support. Other services, such as homeland security and actions against drug-trafficking operations, are becoming increasingly important.
 
 Civil Air Patrol is well-known for its search activities in conjunction with search and rescue (SAR) operations. CAP is involved with approximately three quarters of inland SAR missions directed by the United States Air Force Rescue Coordination Center at Tyndall Air Force Base, Florida. Outside of the continental United States, CAP directly supports the Joint Rescue Coordination Centers in Alaska, Hawaii, and Puerto Rico. CAP is credited with saving an average of 100 lives per year.
@@ -21,3 +23,5 @@ The Red Cross, Salvation Army and other civilian agencies frequently ask Civil A
 Civil Air Patrol assists the U.S. Customs and Border Protection, Drug Enforcement Administration, and United States Forest Service in the War on Drugs. In 2005, CAP flew over 12,000 hours in support of this mission and led these agencies to the confiscation of illegal substances valued at over US$400 million. Civil Air Patrol makes extensive use of the Airborne Real-time Cueing Hyperspectral Enhanced Reconnaissance system, mounted on the Gippsland GA8 Airvan. The system is able to evaluate spectral signatures given off by certain objects, allowing the system to identify, for example, a possible marijuana crop.
 
 The George H. W. Bush Composite Squadron also conducts non-mission flight operations using corporate Civil Air Patrol aircraft to maintain pilot proficiency and to provide cadet orientation flights.
+
+_Read more about [Aerospace Education](/missions/ae) and [Cadet Programs](/missions/cp)._

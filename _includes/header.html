@@ -28,7 +28,7 @@
 
 						<!-- Search -->
 							<section>
-								<form class="search" method="get" action="/search">
+								<form id="search" method="get" action="/search">
 									<input type="text" name="q" placeholder="Search" />
 								</form>
 							</section>
@@ -36,37 +36,16 @@
 						<!-- Links -->
 							<section>
 								<ul class="links">
-									<li>
-										<a href="#">
-											<h3>Lorem ipsum</h3>
-											<p>Feugiat tempus veroeros dolor</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Dolor sit amet</h3>
-											<p>Sed vitae justo condimentum</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Feugiat veroeros</h3>
-											<p>Phasellus sed ultricies mi congue</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Etiam sed consequat</h3>
-											<p>Porta lectus amet ultricies</p>
-										</a>
-									</li>
+									{% for item in site.nav_menu_items %}
+									<li><a href="/{{ item | downcase }}">{{ item }}</a></li>
+									{% endfor %}
 								</ul>
 							</section>
 
 						<!-- Actions -->
 							<section>
 								<ul class="actions vertical">
-									<li><a href="#" class="button big fit">Log In</a></li>
+									<li><a href="https://www.capnhq.gov" target="_blank" class="button big fit">Members eServices Login</a></li>
 								</ul>
 							</section>
 

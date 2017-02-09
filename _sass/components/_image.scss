@@ -26,6 +26,10 @@
 			}
 		}
 
+		&.thumb {
+			max-width: 200px;
+		}
+
 		&.left {
 			float: left;
 			padding: 0 1.5em 1em 0;

@@ -6,11 +6,15 @@ layout: page
 
 We are always looking for new members interested in serving their community and nation through Civil Air Patrol. The process to join is simple and the staff of TX-041 will be glad to help you with your membership process.
 
-Step 1: Review the [FAQs for adults, cadets, and pilots](/faqs) — these should answer a majority of your questions. Also visit the [Civil Air Patrol prospective member website](http://www.gocivilairpatrol.com) for information about joining.
+## Step 1: 
 
-Step 2: Come to a meeting ([see our meeting schedule and locations](/contact)) to visit with the senior or cadet leadership and see what we do during a regular meeting.
+Review the [FAQs for adults, cadets, and pilots](/faqs) — these should answer a majority of your questions. Also visit the [Civil Air Patrol prospective member website](http://www.gocivilairpatrol.com) for information about joining.
 
-Step 3:
+## Step 2: 
+
+Come to a meeting ([see our meeting schedule and locations](/contact)) to visit with the senior or cadet leadership and see what we do during a regular meeting.
+
+## Step 3:
 
 ### Adults: 
 

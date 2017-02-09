@@ -1,28 +1,14 @@
 ---
 layout: page
-
-resource_sections:
-  admin:
-    title: Administration
-    links:
-      Cadet Program Monthly Master Schedule: /cadet-master-schedule
-  ae:
-    title: Aerospace Education
-    links:
-      CAP National Aerospace Education: http://www.capmembers.com/aerospace_education
-      Coulter Airfield (KCFD): http://www.bryantx.gov/coulterairfield
-      Federal Aviation Administration (FAA): https://www.faa.gov
-      National Aeronautics and Space Administration (NASA): https://www.nasa.gov
-      Texas Wing Aerospace Education: http://www.txwgcap.org/departments/ae
 ---
 
 <h2>Member Resources</h2>
 
-{% for section in page.resource_sections %}
-<h3>{{ section.title }}</h3>
-<ul>
+{% for section in site.resources %}
+<a name="{{ section.section }}"><h3>{{ section.title }}</h3></a>
+<ul class="resources">
 {% for link in section.links %}
-  <li><a href="link">{{ link }}</a></li>
+  <li><a href="{{ link.url }}" target="_blank">{{ link.title }}</a></li>
 {% endfor %}
 </ul>
 {% endfor %}
