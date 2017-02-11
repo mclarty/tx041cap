@@ -4,3 +4,26 @@ layout: page
 
 <h2>Frequently Asked Questions</h2>
 
+<ul class="actions">
+	<li><a class="big button" href="#adults">Adults</a></li>
+	<li><a class="big button" href="#cadets">Cadets</a></li>
+	<li><a class="big button" href="#parents">Parents</a></li>
+	<li><a class="big button" href="#pilots">Pilots</a></li>
+</ul>
+
+<hr />
+{% assign categories = "Adults|Cadets|Parents|Pilots" | split: "|" %}
+{% for category in categories %}
+
+<a name="{{ category | downcase }}"><h3>{{ category }}</h3></a>
+<br />
+
+{% for questions in site.data.faqs %}
+{% if questions.category contains category %}
+<h4>{{ questions.question }}</h4>
+<p>{{ questions.answer | markdownify }}</p>
+{% endif %}
+{% endfor %}
+<hr />
+
+{% endfor %}

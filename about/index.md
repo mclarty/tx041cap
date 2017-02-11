@@ -4,9 +4,9 @@ layout: page
 
 ## About
 
-### The George H. W. Bush Composite Squadron
-
 <span class="image right"><img src="/images/bush_charter.jpg" alt="" />President George H. W. Bush presents the CAP squadron charter to Lt Colonel Brooks Cima, Texas Wing Director of Emergency Services, on 31 March 2009</span>
+
+### The George H. W. Bush Composite Squadron
 
 In early 2009, a remote flight of the Lone Star Composite Squadron, located in Brenham, Texas, was formed in College Station. Asked to decide on a name for the squadron, the members decided on “George H. W. Bush”. The members wrote to the former President asking for his sponsorship, to which he agreed "with pleasure."
 
@@ -21,3 +21,5 @@ Civil Air Patrol (CAP) is a Congressionally chartered, federally supported, non-
 Nationwide, CAP is a major operator of single-engine general aviation aircraft, used in the execution of our various missions, including orientation flights for cadets and the provision of significant emergency services capabilities. Because of these extensive flying opportunities, many CAP members become licensed pilots.
 
 __*Portions of this section are excerpts from Volunteer magazine, May – July 2009*__
+
+<a class="big button" href="/about/emblem">Read More: Unit Emblem Heraldry</a>

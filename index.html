@@ -72,9 +72,9 @@
 			    jQuery(document).ready(function(){
 			        jQuery('.social-feed-main').socialfeed({
 					    facebook:{
-					        accounts: ['!tx041cap'],  //Array: Specify a list of accounts from which to pull wall posts
-					        limit: 5,                                   //Integer: max number of posts to load
-					        access_token: '281934492176254|1eb7df0e77e027717aad62e0fdc08021'  //String: "APP_ID|APP_SECRET"
+					        accounts: ['!{{ site.data.socialfeed.facebook_account }}'],  //Array: Specify a list of accounts from which to pull wall posts
+					        limit: {{ site.data.socialfeed.facebook_limit }},                                   //Integer: max number of posts to load
+					        access_token: '{{ site.data.socialfeed.facebook_access_token }}'  //String: "APP_ID|APP_SECRET"
 					    },
 			            // GENERAL SETTINGS
 			            length: 500,                                      //Integer: For posts with text longer than this length, show an ellipsis.

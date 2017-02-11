@@ -18,4 +18,7 @@ As cadets progress through the program, they are placed in charge of lower ranki
 
 Civil Air Patrol also has several cadet squadrons located in middle schools. CAP's School Enrichment Program (formerly known as Middle School Initiative) is a ready-to-use program for teachers and other mentors conduct leadership training through Aerospace Education classes. Students are introduced to the principles of flight, model rocketry, and also leadership. CAP's SEP program is similar to a Junior ROTC program. CAP has 47 units located in Middle School classrooms throughout the country.
 
-_Read more about [Aerospace Education](/missions/ae) and [Emergency Services](/missions/es)._
+<ul class="actions pagination">
+	<li><a class="big button previous" href="/missions/ae">Aerospace Education</a></li>
+	<li><a class="big button next" href="/missions/es">Emergency Services</a></li>
+</ul>

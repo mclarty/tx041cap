@@ -14,4 +14,6 @@ Senior members may study aerospace through the Senior Member Professional Develo
 
 Through outreach programs, including the External Aerospace Education program, CAP helps school teachers integrate aviation and aerospace into the classroom by providing seminars, course materials and through sponsorship of the National Congress on Aviation and Space Education. Members also provide their communities with resources for better management of airports and other aviation-related facilities, and promote the benefits of such facilities. The organization also works with other groups, such as the Boy Scouts of America, the Girl Scouts of the USA and 4-H to fulfill the education goal set down in the organizations congressional charter – to "encourage and foster civil aviation in local communities."
 
-_Read more about [Cadet Programs](/missions/cp) and [Emergency Services](/missions/es)._
+<ul class="actions pagination">
+	<li><a class="big button next" href="/missions/cp">Cadet Programs</a></li>
+</ul>

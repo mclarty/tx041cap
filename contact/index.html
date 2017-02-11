@@ -22,11 +22,9 @@ Phone: {{ site.phone_number }}
 
 <h3>Command Staff</h3>
 
-<p>
-<strong>Commander:</strong> <a href="mailto:{{ site.cc_email }}">{{ site.cc_name }}</a><br />
-<strong>Deputy Commander for Seniors:</strong> <a href="mailto:{{ site.cds_email }}">{{ site.cds_name }}</a><br />
-<strong>Deputy Commander for Cadets:</strong> <a href="mailto:{{ site.cdc_email }}">{{ site.cdc_name }}</a>
-</p>
+<p id="contact"></p>
+
+<p><a class="big button" href="/about/staff">Squadron Senior Staff</a></p>
 
 <h3>Meeting Schedule</h3>
 
@@ -38,6 +36,7 @@ Phone: {{ site.phone_number }}
 
 <div id="map"></div>
 
+{% include scripts.html %}
 <script>
   function initMap() {
     var uluru = {lat: {{ site.meeting_latitude }}, lng: {{ site.meeting_longitude }} };
@@ -54,4 +53,27 @@ Phone: {{ site.phone_number }}
 
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key={{ site.gmap_api_key }}&callback=initMap">
+</script>
+
+<script>
+$.ajax({
+  url: "{{ site.txwg_api_url }}/staff",
+  type: 'GET',
+  dataType: 'json',
+  success: function(data) {
+    var staff_order = {{ site.contact_staff | json | replace: '=>', ':' }};
+    $.each( staff_order, function( s, position ) {
+      $.each( data, function( i, item ) {
+        if( position == $.trim(item.Duty) ) {
+          $( "<strong>" + position + ":</strong> <a href=\"mailto:" + item.Email + "\">" + item.Rank + " " + item.NameFirst + " " + item.NameLast + "</a><br />" )
+          .appendTo( "#contact" );
+        }
+      });
+    });
+  },
+  error: function() { console.log('Error processing ajax function.'); },
+  beforeSend: function(xhr) {
+    xhr.setRequestHeader( 'Token', "{{ site.txwg_api_key }}" );
+  }
+});
 </script>

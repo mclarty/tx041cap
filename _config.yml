@@ -1,3 +1,5 @@
+# Main Page Config Stuff
+
 title: George H. W. Bush Composite Squadron Civil Air Patrol
 header_1: George H. W. Bush Composite Squadron
 header_2: Texas Wing Civil Air Patrol
@@ -29,17 +31,6 @@ meeting_location_description: >
   Portable Building in FBO Parking Lot of <a href="http://www.bryantx.gov/coulterairfield">Coulter Airfield</a> 
   in Bryan, Texas.
 gmap_api_key: AIzaSyAxqX6BpSB7aipaJiSqbHtDCNeko7sKTdM
-
-# Command Staff Info for Contact Page
-
-cc_name: Maj Wendi Lamphear
-cc_email: wlamphear@tx041cap.org
-
-cds_name: Capt Forest Allen
-cds_email: fallentx@gmail.com
-
-cdc_name: 2d Lt Jessica Strominger
-cdc_email: j.strominger94@gmail.com
 
 # Resources Page Links
 
@@ -111,6 +102,68 @@ resources:
     - title: Vanguard Industries
       url: http://www.vanguardmil.com/?main_page=index&amp;page=civil-air-patrol-cap&amp;cPath=6
 
+# Order of Senior Staff Listing
+
+staff_order:
+  - position: Commander
+    indent: 0
+  - position: Administrative Officer
+    indent: 2
+  - position: Drug Demand Reduction Officer
+    indent: 2
+  - position: Finance Officer
+    indent: 2
+  - position: Historian
+    indent: 2
+  - position: Homeland Security Officer
+    indent: 2
+  - position: Information Technology Officer
+    indent: 2
+  - position: Legal Officer
+    indent: 2
+  - position: Medical Officer
+    indent: 2
+  - position: Personnel Officer
+    indent: 2
+  - position: Public Affairs Officer
+    indent: 2
+  - position: Recruiting & Retention Officer
+    indent: 2
+  - position: Safety Officer
+    indent: 2
+  - position: Testing Officer
+    indent: 2
+  - position: Deputy Commander for Seniors
+    indent: 1
+  - position: Communications Officer
+    indent: 2
+  - position: Logistics Officer
+    indent: 2
+  - position: Operations Officer
+    indent: 2
+  - position: Professional Development Officer
+    indent: 2
+  - position: Deputy Commander for Cadets
+    indent: 1
+  - position: Aerospace Education Officer
+    indent: 2
+  - position: Squadron Activities Officer
+    indent: 2
+  - position: Squadron Leadership Officer
+    indent: 2
+
+# Staff Listing for Contact Page
+
+contact_staff:
+  - Commander
+  - Deputy Commander for Seniors
+  - Deputy Commander for Cadets
+
+##############################################################################
+################## NORMAL USERS DO NOT EDIT BELOW THIS LINE ##################
+##############################################################################
+
+
 # Navigation Menu Items
 nav_menu_items:
   - About
@@ -120,6 +173,16 @@ nav_menu_items:
   - FAQs
   - Join
   - Contact
+
+# Texas Wing API Config Settings
+txwg_api_url: https://www.txwgcap.org/api
+txwg_api_key: 7fe518c73465dacaddc938a09da48d1d44b0dfa2ef88f0a2b4afdaa8274343fc
+
+
+##############################################################################
+######################## NOBODY EDIT BELOW THIS LINE #########################
+##############################################################################
+
 
 # Build settings
 markdown: kramdown

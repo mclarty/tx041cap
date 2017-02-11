@@ -24,4 +24,6 @@ Civil Air Patrol assists the U.S. Customs and Border Protection, Drug Enforcemen
 
 The George H. W. Bush Composite Squadron also conducts non-mission flight operations using corporate Civil Air Patrol aircraft to maintain pilot proficiency and to provide cadet orientation flights.
 
-_Read more about [Aerospace Education](/missions/ae) and [Cadet Programs](/missions/cp)._
+<ul class="actions pagination">
+	<li><a class="big button previous" href="/missions/cp">Cadet Programs</a></li>
+</ul>

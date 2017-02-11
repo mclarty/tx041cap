@@ -2,4 +2,30 @@
 layout: page
 ---
 
-[Insert staff listing API here]
+<h2>Squadron Senior Staff</h2>
+
+<table id="staff">
+</table>
+
+{% include scripts.html %}
+<script>
+$.ajax({
+	url: "{{ site.txwg_api_url }}/staff",
+	type: 'GET',
+	dataType: 'json',
+	success: function(data) {
+		var staff_order = {{ site.staff_order | json | replace: '=>', ':' }};
+		$.each( staff_order, function( s, staff ) {
+			$.each( data, function( i, item ) {
+				if( staff.position == $.trim(item.Duty) ) {
+					$( "<tr><td style=\"padding-left: " + ( staff.indent + 1 ) + "em;\">" + item.Duty + "</td><td>" + item.Rank + " " + item.NameFirst + " " + item.NameLast + "</td></tr>" ).appendTo( "#staff" );
+				}
+			});
+		});
+	},
+	error: function() { console.log('Error processing ajax function.'); },
+	beforeSend: function(xhr) {
+		xhr.setRequestHeader( 'Token', "{{ site.txwg_api_key }}" );
+	}
+});
+</script>
