@@ -1,0 +1,193 @@
+# Main Page Config Stuff
+
+title: George H. W. Bush Composite Squadron Civil Air Patrol
+header_1: George H. W. Bush Composite Squadron
+header_2: Texas Wing Civil Air Patrol
+menu_title: SWR-TX-041
+email: info@tx041cap.org
+phone_number: (979) 599-9038
+description: > # this means to ignore newlines until "baseurl:"
+  We are America's Air Force Auxiliary--citizens serving the community of the Brazos Valley
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: tx041cap
+facebook_username: tx041cap
+
+# Meeting Information for Contact Page
+
+meeting_location: Coulter Airfield (KCFD)
+meeting_address: 6120 State Highway 21 East
+meeting_city: Bryan
+meeting_state: TX
+meeting_zip: 77808
+meeting_latitude: 30.718695
+meeting_longitude: -96.337056
+meeting_map_zoom: 15
+meeting_schedule: >
+  The George H. W. Bush Composite Squadron meets every Tuesday from 6:30pm (cadets) 
+  or 7:00pm (seniors) until 9:00pm.  Special training events are frequently scheduled 
+  on weekends.  Our Tuesday meeting locations vary as shown below.
+meeting_location_description: >
+  Portable Building in FBO Parking Lot of <a href="http://www.bryantx.gov/coulterairfield">Coulter Airfield</a> 
+  in Bryan, Texas.
+gmap_api_key: AIzaSyAxqX6BpSB7aipaJiSqbHtDCNeko7sKTdM
+
+# Resources Page Links
+
+resources:
+  - section: ae
+    title: Aerospace Education
+    links:
+    - title: CAP National Aerospace Education
+      url: http://www.capmembers.com/aerospace_education
+    - title: Coulter Airfield (KCFD)
+      url: http://www.bryantx.gov/coulterairfield
+    - title: Federal Aviation Administration (FAA)
+      url: https://www.faa.gov
+    - title: National Aeronautics and Space Administration (NASA)
+      url: https://www.nasa.gov
+    - title: Texas Wing Aerospace Education
+      url: https://www.txwgcap.org/departments/ae
+  - section: cp
+    title: Cadet Programs
+    links:
+    - title: Cadet Program Progression
+      url: http://www.capmembers.com/cadet_programs/stripes_to_diamonds
+    - title: CAP National Cadet Programs
+      url: http://www.capmembers.com/cadet_programs
+    - title: New Cadet Help
+      url: http://www.capmembers.com/cadet_programs/new_cadet_help
+    - title: Respect on Display Pamphlet
+      url: http://www.capmembers.com/media/cms/Respect_On_Display__CAPP_151_A1658A31B2A97.pdf
+    - title: Texas Wing Cadet Programs
+      url: http://www.texascadet.org
+  - section: es
+    title: Emergency Services
+    links:
+    - title: CAP National Emergency Services
+      url: http://www.capmembers.com/emergency_services
+    - title: Emergency Services Education &amp; Training
+      url: http://www.capmembers.com/emergency_services/operations_support/education_and_training
+    - title: Ground Search &amp; Rescue Curriculum Material
+      url: http://nesa.cap.gov/gsar-curriculum
+    - title: Mission Aircrew Curriculum Material
+      url: http://nesa.cap.gov/mas-curriculum-2
+    - title: Required NIMS Training
+      url: http://www.capmembers.com/emergency_services/operations_support/national_incident_management_system_nims.cfm
+    - title: Texas Wing Emergency Services
+      url: http://www.txwgcap.org/departments/dos
+  - section: do
+    title: Flight Operations
+    links:
+    - title: Apollo GX55 GPS Simulator Download
+      url: https://www8.garmin.com/include/gxsimulator/SimulatorPopupGX.html
+  - section: pd
+    title: Professional Development
+    links:
+    - title: CAP University
+      url: http://www.capmembers.com/cap_university
+    - title: Great Start Booklet
+      url: http://www.capmembers.com/media/cms/Great_Start_Booklet_Adults_7836A661C9F11.pdf
+    - title: New Senior Help
+      url: http://www.capmembers.com/cap_university/level-1-orientation
+    - title: Respect on Display Pamphlet
+      url: http://www.capmembers.com/media/cms/Respect_On_Display__CAPP_151_A1658A31B2A97.pdf
+    - title: Senior Member Specialty Track Guides
+      url: http://www.capmembers.com/cap_university/level_ii_technical_training.cfm#Choose_a_Specialty
+  - section: uniforms
+    title: Uniforms
+    links:
+    - title: Uniform Posters
+      url: http://members.gocivilairpatrol.com/media/cms/Uniform_poster_Sept_08_PROOF_FB12BA6E0935A.pdf
+    - title: Vanguard Industries
+      url: http://www.vanguardmil.com/?main_page=index&amp;page=civil-air-patrol-cap&amp;cPath=6
+
+# Order of Senior Staff Listing
+
+staff_order:
+  - position: Commander
+    indent: 0
+  - position: Administrative Officer
+    indent: 2
+  - position: Drug Demand Reduction Officer
+    indent: 2
+  - position: Finance Officer
+    indent: 2
+  - position: Historian
+    indent: 2
+  - position: Homeland Security Officer
+    indent: 2
+  - position: Information Technology Officer
+    indent: 2
+  - position: Legal Officer
+    indent: 2
+  - position: Medical Officer
+    indent: 2
+  - position: Personnel Officer
+    indent: 2
+  - position: Public Affairs Officer
+    indent: 2
+  - position: Recruiting & Retention Officer
+    indent: 2
+  - position: Safety Officer
+    indent: 2
+  - position: Testing Officer
+    indent: 2
+  - position: Deputy Commander for Seniors
+    indent: 1
+  - position: Communications Officer
+    indent: 2
+  - position: Logistics Officer
+    indent: 2
+  - position: Operations Officer
+    indent: 2
+  - position: Professional Development Officer
+    indent: 2
+  - position: Deputy Commander for Cadets
+    indent: 1
+  - position: Aerospace Education Officer
+    indent: 2
+  - position: Squadron Activities Officer
+    indent: 2
+  - position: Squadron Leadership Officer
+    indent: 2
+
+# Staff Listing for Contact Page
+
+contact_staff:
+  - Commander
+  - Deputy Commander for Seniors
+  - Deputy Commander for Cadets
+
+##############################################################################
+################## NORMAL USERS DO NOT EDIT BELOW THIS LINE ##################
+##############################################################################
+
+
+# Navigation Menu Items
+nav_menu_items:
+  - About
+  - Missions
+  - Calendar
+  - Resources
+  - FAQs
+  - Join
+  - Contact
+
+# Texas Wing API Config Settings
+txwg_api_url: https://www.txwgcap.org/api
+txwg_api_key: 7fe518c73465dacaddc938a09da48d1d44b0dfa2ef88f0a2b4afdaa8274343fc
+
+
+##############################################################################
+######################## NOBODY EDIT BELOW THIS LINE #########################
+##############################################################################
+
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

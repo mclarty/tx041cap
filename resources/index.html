@@ -1,0 +1,14 @@
+---
+layout: page
+---
+
+<h2>Member Resources</h2>
+
+{% for section in site.resources %}
+<a name="{{ section.section }}"><h3>{{ section.title }}</h3></a>
+<ul class="resources">
+{% for link in section.links %}
+  <li><a href="{{ link.url }}" target="_blank">{{ link.title }}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}

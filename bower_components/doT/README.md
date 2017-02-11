@@ -61,12 +61,25 @@ Details
 
 	./bin/dot-packer -s examples/views -d out/views
 
+## Example for express
+	Many people are using doT with express. I added an example of the best way of doing it examples/express:
+
+[doT with express](examples/express)
+
 ## Notes
     doU.js is here only so that legacy external tests do not break. Use doT.js.
     doT.js with doT.templateSettings.append=false provides the same performance as doU.js.
 
 ## Author
-Laura Doktorova @olado
+Laura Doktorova [@olado](http://twitter.com/olado)
 
 ## License
 doT is licensed under the MIT License. (See LICENSE-DOT)
+
+<p align="center">
+  <img src="http://olado.github.io/doT/doT-js-100@2x.png" alt="logo by Kevin Kirchner"/>
+</p>
+
+Thank you [@KevinKirchner](https://twitter.com/kevinkirchner) for the logo.
+
+
