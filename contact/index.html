@@ -2,22 +2,14 @@
 layout: page
 ---
 
-<style>
- #map {
-   width: 60%;
-   height: 400px;
-   background-color: grey;
- }
-</style>
-
 <h2>Contact</h2>
 
 <p><strong>
-{{ site.header_1 }}<br />
-{{ site.meeting_location }}<br />
-{{ site.meeting_address }}<br />
-{{ site.meeting_city }}, {{ site.meeting_state }} {{ site.meeting_zip }}<br />
-Phone: {{ site.phone_number }}
+{{ site.data.main.header_1 }}<br />
+{{ site.data.meeting.meeting_location }}<br />
+{{ site.data.meeting.meeting_address }}<br />
+{{ site.data.meeting.meeting_city }}, {{ site.data.meeting.meeting_state }} {{ site.data.meeting.meeting_zip }}<br />
+Phone: {{ site.data.main.phone_number }}
 </strong></p>
 
 <h3>Command Staff</h3>
@@ -28,20 +20,20 @@ Phone: {{ site.phone_number }}
 
 <h3>Meeting Schedule</h3>
 
-<p>{{ site.meeting_schedule }}</p>
+<p>{{ site.data.meeting.meeting_schedule }}</p>
 
 <h3>Meeting Location</h3>
 
-<p>{{ site.meeting_location_description }}</p>
+<p>{{ site.data.meeting.meeting_location_description }}</p>
 
 <div id="map"></div>
 
 {% include scripts.html %}
 <script>
   function initMap() {
-    var uluru = {lat: {{ site.meeting_latitude }}, lng: {{ site.meeting_longitude }} };
+    var uluru = {lat: {{ site.data.meeting.meeting_latitude }}, lng: {{ site.data.meeting.meeting_longitude }} };
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: {{ site.meeting_map_zoom }},
+      zoom: {{ site.data.meeting.meeting_map_zoom }},
       center: uluru
     });
     var marker = new google.maps.Marker({
@@ -52,7 +44,7 @@ Phone: {{ site.phone_number }}
 </script>
 
 <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key={{ site.gmap_api_key }}&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key={{ site.data.meeting.gmap_api_key }}&callback=initMap">
 </script>
 
 <script>
@@ -61,7 +53,7 @@ $.ajax({
   type: 'GET',
   dataType: 'json',
   success: function(data) {
-    var staff_order = {{ site.contact_staff | json | replace: '=>', ':' }};
+    var staff_order = {{ site.data.staff.contact_staff | json | replace: '=>', ':' }};
     $.each( staff_order, function( s, position ) {
       $.each( data, function( i, item ) {
         if( position == $.trim(item.Duty) ) {
