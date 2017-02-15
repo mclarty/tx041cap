@@ -1,0 +1,56 @@
+# Order of Senior Staff Listing
+
+staff_order:
+  - position: Commander
+    indent: 0
+  - position: Administrative Officer
+    indent: 2
+  - position: Drug Demand Reduction Officer
+    indent: 2
+  - position: Finance Officer
+    indent: 2
+  - position: Historian
+    indent: 2
+  - position: Homeland Security Officer
+    indent: 2
+  - position: Information Technology Officer
+    indent: 2
+  - position: Legal Officer
+    indent: 2
+  - position: Medical Officer
+    indent: 2
+  - position: Personnel Officer
+    indent: 2
+  - position: Public Affairs Officer
+    indent: 2
+  - position: Recruiting & Retention Officer
+    indent: 2
+  - position: Safety Officer
+    indent: 2
+  - position: Testing Officer
+    indent: 2
+  - position: Deputy Commander for Seniors
+    indent: 1
+  - position: Communications Officer
+    indent: 2
+  - position: Logistics Officer
+    indent: 2
+  - position: Operations Officer
+    indent: 2
+  - position: Professional Development Officer
+    indent: 2
+  - position: Deputy Commander for Cadets
+    indent: 1
+  - position: Aerospace Education Officer
+    indent: 2
+  - position: Squadron Activities Officer
+    indent: 2
+  - position: Squadron Leadership Officer
+    indent: 2
+
+# Staff Listing for Contact Page
+
+contact_staff:
+  - Commander
+  - Deputy Commander for Seniors
+  - Deputy Commander for Cadets

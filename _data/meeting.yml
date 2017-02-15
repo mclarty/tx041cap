@@ -1,0 +1,18 @@
+# Meeting Information for Contact Page
+
+meeting_location: Coulter Airfield (KCFD)
+meeting_address: 6120 State Highway 21 East
+meeting_city: Bryan
+meeting_state: TX
+meeting_zip: 77808
+meeting_latitude: 30.718695
+meeting_longitude: -96.337056
+meeting_map_zoom: 15
+meeting_schedule: >
+  The George H. W. Bush Composite Squadron meets every Tuesday from 6:30pm (cadets) 
+  or 7:00pm (seniors) until 9:00pm.  Special training events are frequently scheduled 
+  on weekends.  Our Tuesday meeting locations vary as shown below.
+meeting_location_description: >
+  Portable Building in FBO Parking Lot of <a href="http://www.bryantx.gov/coulterairfield">Coulter Airfield</a> 
+  in Bryan, Texas.
+gmap_api_key: AIzaSyAxqX6BpSB7aipaJiSqbHtDCNeko7sKTdM
