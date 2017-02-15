@@ -1,58 +1,59 @@
-# Future Imperfect - Jekyll Theme
+# TX-041 Squadron Website - Jekyll Theme
 
-A Jekyll version of the "Future Imperfect" theme by [HTML5 UP](https://html5up.net/).
+- A [Jekyll](https://jekyllrb.com) version of the "Future Imperfect" theme by [HTML5 UP](https://html5up.net).
+- Hosted on [GitHub Pages](https://pages.github.com).
+- HTTPS, content delivery and caching provided by [CloudFlare](https://www.cloudflare.com).
+- Fonts by [Google Fonts](https://fonts.google.com).
+- Facebook news feed by [social-feed](https://github.com/pavelk2/social-feed).
+- Senior staff listing provided by Texas Wing API feed.
+- Icons provided by [Font Awesome](https://fortawesome.github.com/Font-Awesome).
 
-![Future Imperfect Theme](images/future-imperfect.jpg "Future Imperfect Theme")
+## How-To
 
-# How to Use
+Unless you are an HTML designer who understands Liquid Markup and the Jekyll Ruby Gem library, 
+you should only edit files inside the `_data` folder. You may also want to read the 
+[GitHub Guide](https://guides.github.com/activities/hello-world/) for getting started with using 
+GitHub.
 
-For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details, 
-or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
-and [creating pages](https://jekyllrb.com/docs/pages/).
+## What Is What
 
-- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
-- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file! The `.gitlab-ci.yml` file is only needed for GitLab Pages, so feel free to delete this if you are using GitHub instead.
+- `_data/faqs.yml` is the file that contains the questions and answers on the FAQs page.
+- `_data/main.yml' has all main (Front Page) website data.
+- `_data/meeting.yml` has the meeting data for the Contact page.
+- `_data/resources.yml` has the links/bookmarks for the Resources page.
+- `_data/socialfeed.yml` has the Facebook account and API information for the Front Page.
+- `_data/staff.yml` has the position titles, ordering, and formatting for the staff page, but not
+the names of the people holding the positions; that data is pulled from the Texas Wing website.
 
-# Credits
+- The `_includes`, `_layouts`, and `_sass` folders are for Jekyll designers and contains the templates 
+used for creating individual page layouts and their associated CSS stylesheets.
 
-Original README from HTML5 UP:
+- The `about`, `missions`, `calendar`, `resources`, `faqs`, `join`, and `contact` folders contain the 
+actual pages (as either `index.html` or `index.md`) for each of the major sections on the website. These 
+files can be edited by anyone with a basic understanding of HTML, but care must be taken to not break 
+the Jekyll dependencies... only simple content changes should be attempted without a full understanding 
+of Jekyll.
 
-```
-Future Imperfect by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+- The `assets` folder contains static CSS pages for Font Awesome and IE8/9 shims, the main SCSS stylesheet, 
+and JavaScript for the fundamental site theme.  Nothing should be altered in here unless `main.scss` needs 
+to be updated.
 
+- The `bower_components` folder contains all the required files for SocialFeed.
 
-It's been a long time coming, but I've finally gotten around to creating a brand new
-blog-style template (and the first since Striped, which came out waaaaay back in 2013).
-Anyway, Future Imperfect features a clean, expansive layout, a toggleable search box,
-and -- because pretty much all modern browsers can use it now -- a whole lot of flexbox
-action. Enjoy it :)
+- The `images` folder is the home for all image files on the website.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+- The `search` folder is the results page for the in-site Google Custom Search.
 
-(* = not included)
+- `_config.yml' is the main config file for the Jekyll site and does not need any altering unless 
+the site's navigation menu is to be changed.
 
-AJ
-aj@lkn.io | @ajlkn
+- `index.html` is the Front Page for the website.
 
+- `template.html` is the template for a SocialFeed item.
 
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		Misc. Sass functions (@HugoGiraudel)
-		Respond.js (j.mp/respondjs)
-		Skel (skel.io)
-
-```
-
-Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).
+## Other Credits
+	jQuery (jquery.com)
+	html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+	Misc. Sass functions (@HugoGiraudel)
+	Respond.js (j.mp/respondjs)
+	Skel (skel.io)
