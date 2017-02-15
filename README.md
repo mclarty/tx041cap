@@ -18,7 +18,7 @@ GitHub.
 ## What Is What
 
 - `_data/faqs.yml` is the file that contains the questions and answers on the FAQs page.
-- `_data/main.yml' has all main (Front Page) website data.
+- `_data/main.yml` has all main (Front Page) website data.
 - `_data/meeting.yml` has the meeting data for the Contact page.
 - `_data/resources.yml` has the links/bookmarks for the Resources page.
 - `_data/socialfeed.yml` has the Facebook account and API information for the Front Page.
@@ -44,7 +44,7 @@ to be updated.
 
 - The `search` folder is the results page for the in-site Google Custom Search.
 
-- `_config.yml' is the main config file for the Jekyll site and does not need any altering unless 
+- `_config.yml` is the main config file for the Jekyll site and does not need any altering unless 
 the site's navigation menu is to be changed.
 
 - `index.html` is the Front Page for the website.
