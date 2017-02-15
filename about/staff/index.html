@@ -14,7 +14,7 @@ $.ajax({
 	type: 'GET',
 	dataType: 'json',
 	success: function(data) {
-		var staff_order = {{ site.staff_order | json | replace: '=>', ':' }};
+		var staff_order = {{ site.data.staff.staff_order | json | replace: '=>', ':' }};
 		$.each( staff_order, function( s, staff ) {
 			$.each( data, function( i, item ) {
 				if( staff.position == $.trim(item.Duty) ) {
