@@ -16,6 +16,9 @@ nav_menu_items:
 txwg_api_url: https://www.txwgcap.org/api
 txwg_api_key: 7fe518c73465dacaddc938a09da48d1d44b0dfa2ef88f0a2b4afdaa8274343fc
 
+# Google Analytics settings
+ga_url: https://www.google-analytics.com/analytics.js
+ga_key: UA-17682103-1
 
 ##############################################################################
 ######################## NOBODY EDIT BELOW THIS LINE #########################
