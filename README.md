@@ -11,7 +11,7 @@
 ## How-To
 
 Unless you are an HTML designer who understands Liquid Markup and the Jekyll Ruby Gem library, 
-you should only edit files inside the `_data` folder. You may also want to read the 
+you should only edit files inside the `_data` folder. Your best bet will be to use http://prose.io as the editor for any files on the site. You may also want to read the 
 [GitHub Guide](https://guides.github.com/activities/hello-world/) for getting started with using 
 GitHub.
 
