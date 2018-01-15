@@ -16,12 +16,11 @@ layout: page
 {% for category in categories %}
 
 <a name="{{ category | downcase }}"><h3>{{ category }}</h3></a>
-<br />
-
 {% for questions in site.data.faqs %}
 {% if questions.category contains category %}
-<h4>{{ questions.question }}</h4>
+<details><summary><h4>{{ questions.question }}</h4></summary>
 <p>{{ questions.answer | markdownify }}</p>
+</details>
 {% endif %}
 {% endfor %}
 <hr />
