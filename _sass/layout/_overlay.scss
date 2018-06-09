@@ -1,0 +1,70 @@
+///
+/// Future Imperfect by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* overlay */
+
+	#overlay {
+		position: fixed; /* Sit on top of the page content */
+    display: block; /* Not hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+    z-index: _misc(z-index-base) + 10; /* Specify a stack order in case you're using a different order for other elements */
+	}
+
+	#memorial-frame {
+		margin: auto;
+		padding-top: 5px;
+		width: 60%;
+		height: 100%;
+		background-color: #000;
+		text-align: center;
+		color: #ffffff;
+		overflow: scroll;
+	}
+
+  #memorial-close-button {
+		text-align: right;
+		padding-right: 20px;
+	}
+
+	#memorial-close-button a {
+		border: 2px solid #ffffff;
+		border-radius: 5px;
+		padding: 1px 2px;
+		cursor: pointer;
+	}
+
+  #memorial-frame p {
+		margin: 0;
+	}
+
+	#memorial-logo {
+		padding: 25px 0;
+	}
+
+	#memorial-logo img {
+		height: 200px;
+		width: 200px;
+	}
+
+  #memorial-header {
+		font-family: 'Pinyon Script', cursive;
+		font-size: 48px;
+	}
+
+  #memorial-content {
+		padding: 0 25px;
+	}
+
+  #memorial-content p {
+		margin: 0 0 2em;
+		font-size: 18px;
+	}
