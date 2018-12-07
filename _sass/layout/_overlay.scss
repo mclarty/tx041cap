@@ -36,10 +36,16 @@
 	}
 
 	#memorial-close-button a {
+		background-color: #333;
 		border: 2px solid #ffffff;
 		border-radius: 5px;
-		padding: 1px 2px;
+		padding: 1px 10px;
 		cursor: pointer;
+	}
+
+	#memorial-close-button a:hover {
+		background-color: #777;
+		color: #ffffff;
 	}
 
   #memorial-frame p {
