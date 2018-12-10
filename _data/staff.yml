@@ -5,7 +5,7 @@ staff_order:
     indent: 0
   - position: Administrative Officer
     indent: 2
-  - position: Drug Demand Reduction Officer
+  - position: Chaplain
     indent: 2
   - position: Finance Officer
     indent: 2
@@ -26,8 +26,6 @@ staff_order:
   - position: Recruiting & Retention Officer
     indent: 2
   - position: Safety Officer
-    indent: 2
-  - position: Testing Officer
     indent: 2
   - position: Deputy Commander for Seniors
     indent: 1
