@@ -3,9 +3,23 @@
 staff_order:
   - position: Commander
     indent: 0
+  - position: Advisor to the Commander
+    indent: 2
   - position: Administrative Officer
     indent: 2
   - position: Chaplain
+    indent: 2
+  - position: Legal Officer
+    indent: 2
+  - position: NCO Advisor
+    indent: 2
+  - position: Public Affairs Officer
+    indent: 2
+  - position: Safety Officer
+    indent: 2
+  - position: Deputy Commander for Seniors
+    indent: 1
+  - position: Communications Officer
     indent: 2
   - position: Finance Officer
     indent: 2
@@ -15,27 +29,17 @@ staff_order:
     indent: 2
   - position: Information Technology Officer
     indent: 2
-  - position: Legal Officer
+  - position: Logistics Officer
+    indent: 2
+  - position: Operations Officer
     indent: 2
   - position: Medical Officer
     indent: 2
   - position: Personnel Officer
     indent: 2
-  - position: Public Affairs Officer
+  - position: Professional Development Officer
     indent: 2
   - position: Recruiting & Retention Officer
-    indent: 2
-  - position: Safety Officer
-    indent: 2
-  - position: Deputy Commander for Seniors
-    indent: 1
-  - position: Communications Officer
-    indent: 2
-  - position: Logistics Officer
-    indent: 2
-  - position: Operations Officer
-    indent: 2
-  - position: Professional Development Officer
     indent: 2
   - position: Deputy Commander for Cadets
     indent: 1
