@@ -3,38 +3,10 @@
 <!DOCTYPE HTML>
 <html>
 	{% include head.html %}
-	<body style="background-color: #000000;">
-
-		<!-- Memorial overlay -->
-			<div id="overlay">
-				<div id="memorial-frame">
-					<div id="memorial-close-button">
-						<a class="close-button" onclick="document.getElementById('overlay').style.display = 'none';">
-							CLOSE&nbsp;&nbsp;&nbsp;X
-						</a>
-					</div>
-					<div id="memorial-logo">
-						<img src="/images/logo.png">
-					</div>
-					<div id="memorial-header">
-						<p>In Memoriam</p>
-					</div>
-					<div id="memorial-content">
-						<p>The members of the George H. W. Bush Composite Squadron express our deepest
-						condolences to the surviving family of President George H. W. Bush. As with
-						other Americans and those around the world, we mourn the loss and celebrate the
-						extraordinary life of President Bush and his devoted commitment to public
-						service.</p>
-						<p>President Bush stood as a role model for all those who follow him in service
-						to our country. His memory will forever live in the hearts and minds of our
-						squadron's members, and as his namesake we shall relentlessly carry on his
-						legacy of public service as we serve our community, state and nation.</p>
-					</div>
-				</div>
-			</div>
+	<body>
 
 		<!-- Wrapper -->
-			<div id="wrapper" style="background-color: #f4f4f4">
+			<div id="wrapper">
 
 				{% include header.html %}
 
@@ -71,7 +43,7 @@
 								</div>
 							</section>
 						-->
-
+						
 						<!-- Footer -->
 							{% include footer.html %}
 
@@ -105,11 +77,6 @@
 				    show_media: true
 			        });
 			    });
-					jQuery(document).keyup(function(e) {
-					     if (e.keyCode == 27) { // escape key maps to keycode `27`
-					        document.getElementById('overlay').style.display = 'none';
-					    }
-					});
 			</script>
 	</body>
 </html>
