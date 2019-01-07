@@ -56,3 +56,12 @@ contact_staff:
   - Commander
   - Deputy Commander for Seniors
   - Deputy Commander for Cadets
+
+# Staff Data
+
+staff_data:
+  228460:
+    - NameFirst: Seth
+    - NameLast: Hudson
+    - Rank: Maj
+    - Email: shudson@cap.gov

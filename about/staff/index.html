@@ -15,10 +15,16 @@ $.ajax({
 	dataType: 'json',
 	success: function(data) {
 		var staff_order = {{ site.data.staff.staff_order | json | replace: '=>', ':' }};
+		var staff_data = {{ site.data.staff.staff_data | json | replace: '=>', ':' }};
 		$.each( staff_order, function( s, staff ) {
 			$.each( data, function( i, item ) {
 				if( staff.position == $.trim(item.Duty) ) {
-					$( "<tr><td style=\"padding-left: " + ( staff.indent + 1 ) + "em;\">" + item.Duty + "</td><td>" + item.Rank + " " + item.NameFirst + " " + item.NameLast + "</td></tr>" ).appendTo( "#staff" );
+					if( item.NameLast == null ) {
+						staff_item = staff_data[item.CAPID];
+						$( "<tr><td style=\"padding-left: " + ( staff.indent + 1 ) + "em;\">" + item.Duty + "</td><td>" + staff_item[2]['Rank'] + " " + staff_item[0]['NameFirst'] + " " + staff_item[1]['NameLast'] + "</td></tr>" ).appendTo( "#staff" );
+					} else {
+						$( "<tr><td style=\"padding-left: " + ( staff.indent + 1 ) + "em;\">" + item.Duty + "</td><td>" + item.Rank + " " + item.NameFirst + " " + item.NameLast + "</td></tr>" ).appendTo( "#staff" );
+					}
 				}
 			});
 		});

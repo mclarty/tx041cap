@@ -36,11 +36,16 @@ $.ajax({
   dataType: 'json',
   success: function(data) {
     var staff_order = {{ site.data.staff.contact_staff | json | replace: '=>', ':' }};
+    var staff_data = {{ site.data.staff.staff_data | json | replace: '=>', ':' }};
     $.each( staff_order, function( s, position ) {
       $.each( data, function( i, item ) {
         if( position == $.trim(item.Duty) ) {
-          $( "<strong>" + position + ":</strong> <a href=\"mailto:" + item.Email + "\">" + item.Rank + " " + item.NameFirst + " " + item.NameLast + "</a><br />" )
-          .appendTo( "#contact" );
+		if ( item.NameLast == null ) {
+			staff_item = staff_data[item.CAPID];
+			$( "<strong>" + position + ":</strong> <a href=\"mailto:" + staff_item[3]['Email'] + "\">" + staff_item[2]['Rank'] + " " + staff_item[0]['NameFirst'] + " " + staff_item[1]['NameLast'] + "</a><br />" ).appendTo( "#contact" );
+		} else {
+		  $( "<strong>" + position + ":</strong> <a href=\"mailto:" + item.Email + "\">" + item.Rank + " " + item.NameFirst + " " + item.NameLast + "</a><br />" ).appendTo( "#contact" );
+		}
         }
       });
     });
