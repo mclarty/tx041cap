@@ -4,13 +4,7 @@ layout: page
 
 <h2>Contact</h2>
 
-<p><strong>
-{{ site.data.main.header_1 }}<br />
-{{ site.data.meeting.meeting_location }}<br />
-{{ site.data.meeting.meeting_address }}<br />
-{{ site.data.meeting.meeting_city }}, {{ site.data.meeting.meeting_state }} {{ site.data.meeting.meeting_zip }}<br />
-Phone: {{ site.data.main.phone_number }}
-</strong></p>
+<p id="location"></p>
 
 <h3>Command Staff</h3>
 
@@ -48,6 +42,28 @@ $.ajax({
 		}
         }
       });
+    });
+  },
+  error: function() { console.log('Error processing ajax function.'); },
+  beforeSend: function(xhr) {
+    xhr.setRequestHeader( 'Token', "{{ site.txwg_api_key }}" );
+  }
+});
+
+$.ajax({
+  url: "{{ site.txwg_api_url }}/org",
+  type: 'GET',
+  dataType: 'json',
+  success: function(data) {
+    $.each( data['org_address'], function( i, item ) {
+      if( $.trim(item['Type']) == 'MEETING' && $.trim(item['Priority']) == 'PRIMARY' ) {
+	$( "<strong>{{ site.data.main.title }}<br />" + $.trim(item['Addr1']) + "<br />" + $.trim(item['Addr2']) + "<br />" + $.trim(item['City']) + ", " + $.trim(item['State']) + " " + $.trim(item['Zip'].substring(0, 5)) + "</strong>" ).appendTo( "#location" );
+      }
+    });
+    $.each( data['org_contact'], function( i, item ) {
+      if( $.trim(item['Type']) == 'PHONE' && $.trim(item['Priority']) == 'PRIMARY' ) {
+	$( "<br /><strong>Phone: (" + $.trim(item['Contact'].substring(0, 3)) + ") " + $.trim(item['Contact'].substring(3, 6)) + "-" + $.trim(item['Contact'].substring(6, 10)) + "</strong>" ).appendTo( "#location" );
+      }
     });
   },
   error: function() { console.log('Error processing ajax function.'); },
