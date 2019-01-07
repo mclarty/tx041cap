@@ -1,13 +1,5 @@
 # Meeting Information for Contact Page
 
-meeting_location: Easterwood Field (KCLL) General Aviation Terminal
-meeting_address: 1770 George Bush Dr W
-meeting_city: College Station
-meeting_state: TX
-meeting_zip: 77845
-meeting_latitude: 30.5899797
-meeting_longitude: -96.360657
-meeting_map_zoom: 15
 meeting_schedule: >
   The George H. W. Bush Composite Squadron meets every Tuesday from 6:30pm (cadets) 
   or 7:00pm (seniors) until 9:00pm.  Special training events are frequently scheduled 
@@ -15,4 +7,5 @@ meeting_schedule: >
 meeting_location_description: >
   General Aviation Terminal (FBO) building of Easterwood Field Airport in 
   College Station, Texas.
+meeting_location_map_url: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.5601965867745!2d-96.3608805851288!3d30.58995859955109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646831b4197041f%3A0xb981aa4d1ebc9b58!2sGeneral+Aviation+Terminal%2C+College+Station%2C+TX+77845!5e0!3m2!1sen!2sus!4v1528256516008
 gmap_api_key: AIzaSyAxqX6BpSB7aipaJiSqbHtDCNeko7sKTdM

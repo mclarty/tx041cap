@@ -4,11 +4,10 @@ title: George H. W. Bush Composite Squadron Civil Air Patrol
 header_1: George H. W. Bush Composite Squadron
 header_2: Texas Wing Civil Air Patrol
 menu_title: SWR-TX-041
-email: info@tx041cap.org
-phone_number: (512) 673-6302
 description: > # this means to ignore newlines until "baseurl:"
   We are America's Air Force Auxiliary--citizens serving the community of the Brazos Valley
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+email: info@tx041cap.org
 twitter_username: tx041cap
 facebook_username: tx041cap
