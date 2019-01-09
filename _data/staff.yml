@@ -31,8 +31,26 @@ staff_order:
     indent: 2
   - position: Logistics Officer
     indent: 2
+  - position: Maintenance Officer
+    indent: 4
+  - position: Supply Officer
+    indent: 4
+  - position: Transportation Officer
+    indent: 4
   - position: Operations Officer
     indent: 2
+  - position: Emergency Services Officer
+    indent: 4
+  - position: Disaster Preparedness Officer
+    indent: 6
+  - position: Emergency Services Training Officer
+    indent: 6
+  - position: Search and Rescue Officer
+    indent: 6
+  - position: Homeland Security Officer
+    indent: 4
+  - position: Standardization/Evaluation Officer
+    indent: 4
   - position: Medical Officer
     indent: 2
   - position: Personnel Officer
