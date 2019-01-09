@@ -5,13 +5,19 @@ staff_order:
     indent: 0
   - position: Advisor to the Commander
     indent: 2
+  - position: Deputy Commander
+    indent: 1
   - position: Administrative Officer
     indent: 2
   - position: Chaplain
     indent: 2
+  - position: Health Services Officer
+    indent: 2
+  - position: Historian
+    indent: 2
   - position: Legal Officer
     indent: 2
-  - position: NCO Advisor
+  - position: Squadron NCO
     indent: 2
   - position: Public Affairs Officer
     indent: 2
@@ -23,8 +29,6 @@ staff_order:
     indent: 2
   - position: Finance Officer
     indent: 2
-  - position: Historian
-    indent: 2
   - position: Homeland Security Officer
     indent: 2
   - position: Information Technology Officer
@@ -32,25 +36,25 @@ staff_order:
   - position: Logistics Officer
     indent: 2
   - position: Maintenance Officer
-    indent: 4
+    indent: 3
   - position: Supply Officer
-    indent: 4
+    indent: 3
   - position: Transportation Officer
-    indent: 4
+    indent: 3
   - position: Operations Officer
     indent: 2
   - position: Emergency Services Officer
-    indent: 4
+    indent: 3
   - position: Disaster Preparedness Officer
-    indent: 6
+    indent: 4
   - position: Emergency Services Training Officer
-    indent: 6
+    indent: 4
   - position: Search and Rescue Officer
-    indent: 6
+    indent: 4
   - position: Homeland Security Officer
-    indent: 4
+    indent: 3
   - position: Standardization/Evaluation Officer
-    indent: 4
+    indent: 3
   - position: Medical Officer
     indent: 2
   - position: Personnel Officer
