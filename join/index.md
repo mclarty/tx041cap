@@ -18,7 +18,7 @@ Come to a meeting ([see our meeting schedule and locations](/contact)) to visit 
 
 ### Adults: 
 
-Once you have attended three meetings and are ready to make the commitment to joining, [download and complete a membership application](http://www.capmembers.com/media/cms/F012_15378C3760422.pdf). Once the application is complete, bring the application back to a squadron meeting along with proof of identity ([view the list of acceptable documents](http://www.uscis.gov/i-9-central/acceptable-documents)) and a [completed fingerprint card](https://fbi.ibtfingerprint.com) and receive instructions on submitting the application along with required membership dues.
+Once you have attended three meetings and are ready to make the commitment to joining, [download and complete a membership application](https://www.gocivilairpatrol.com/media/cms/F012_Fillable_Mar_17_052D10F8D1B5D.pdf). Once the application is complete, bring the application back to a squadron meeting along with proof of identity ([view the list of acceptable documents](http://www.uscis.gov/i-9-central/acceptable-documents)) and a [completed fingerprint card](https://fbi.ibtfingerprint.com) and receive instructions on submitting the application along with required membership dues.
 
 ### Cadets:
 
