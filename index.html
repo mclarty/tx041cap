@@ -67,7 +67,7 @@
 			    jQuery(document).ready(function(){
 			        jQuery('.social-feed-main').socialfeed({
 					    facebook:{
-					        accounts: ['!{{ site.data.socialfeed.facebook_account }}'],  //Array: Specify a list of accounts from which to pull wall posts
+					        accounts: ['{{ site.data.socialfeed.facebook_account }}'],  //Array: Specify a list of accounts from which to pull wall posts
 					        limit: {{ site.data.socialfeed.facebook_limit }},                                   //Integer: max number of posts to load
 					        access_token: '{{ site.data.socialfeed.facebook_access_token }}'  //String: "APP_ID|APP_SECRET"
 					    },
