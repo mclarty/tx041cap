@@ -298,7 +298,7 @@ if (typeof Object.create !== 'function') {
                         Utility.request(request_url, Feed.facebook.utility.getPosts);
                     };
                     var fields = '?fields=id,from,message,created_time,story';
-                       fields += (options.show_media === true)?',attachments':'';
+                       fields += (options.show_media === true)?',picture,attachments':'';
                     var request_url, limit = '&limit=' + options.facebook.limit,
                         query_extention = '&access_token=' + options.facebook.access_token + '&callback=?';
                     switch (account[0]) {
