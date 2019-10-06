@@ -363,6 +363,10 @@ if (typeof Object.create !== 'function') {
                         var post = {},
                             text = (element.message) ? element.message : element.story;
 
+                        if (text === null) {
+                            return null;
+                        }
+                        
                         post.id = element.id;
                         post.dt_create = moment(element.created_time);
                         post.author_link = 'http://facebook.com/' + element.from.id;
