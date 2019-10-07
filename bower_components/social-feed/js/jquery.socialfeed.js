@@ -354,8 +354,10 @@ if (typeof Object.create !== 'function') {
                     getPosts: function(json) {
                         if (json['data']) {
                             json['data'].forEach(function(element) {
-                                var post = new SocialFeedPost('facebook', Feed.facebook.utility.unifyPostData(element));
-                                post.render();
+                                if (element.message === null) {
+                                    var post = new SocialFeedPost('facebook', Feed.facebook.utility.unifyPostData(element));
+                                    post.render();
+                                }
                             });
                         }
                     },
@@ -363,10 +365,6 @@ if (typeof Object.create !== 'function') {
                         var post = {},
                             text = (element.message) ? element.message : element.story;
 
-                        if (text === null) {
-                            return null;
-                        }
-                        
                         post.id = element.id;
                         post.dt_create = moment(element.created_time);
                         post.author_link = 'http://facebook.com/' + element.from.id;
