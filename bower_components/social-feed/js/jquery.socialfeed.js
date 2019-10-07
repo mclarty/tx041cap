@@ -328,7 +328,22 @@ if (typeof Object.create !== 'function') {
                         $.get(url, callback, 'json');
                     },
                     prepareAttachment: function(element) {
-                        var image_url = element.picture;
+                        var image_url = element.attachments.data[0].media.image.src;
+                        if (image_url.indexOf('_b.') !== -1) {
+                            //do nothing it is already big
+                        } else if (image_url.indexOf('safe_image.php') !== -1) {
+                            image_url = Feed.facebook.utility.getExternalImageURL(image_url, 'url');
+
+                        } else if (image_url.indexOf('app_full_proxy.php') !== -1) {
+                            image_url = Feed.facebook.utility.getExternalImageURL(image_url, 'src');
+
+                        } else if (element.object_id) {
+                            image_url = Feed.facebook.graph + element.object_id + '/picture/?type=normal';
+                        }
+                        return '<img class="attachment" src="' + image_url + '" />';
+                    },
+                    prepareSubAttachment: function(element) {
+                        var image_url = element.attachments.data[0].subattachments.data[0].media.image.src;
                         if (image_url.indexOf('_b.') !== -1) {
                             //do nothing it is already big
                         } else if (image_url.indexOf('safe_image.php') !== -1) {
@@ -354,8 +369,10 @@ if (typeof Object.create !== 'function') {
                     getPosts: function(json) {
                         if (json['data']) {
                             json['data'].forEach(function(element) {
-                                var post = new SocialFeedPost('facebook', Feed.facebook.utility.unifyPostData(element));
-                                post.render();
+                                if (element.message) {
+                                  var post = new SocialFeedPost('facebook', Feed.facebook.utility.unifyPostData(element));
+                                  post.render();
+                                }
                             });
                         }
                     },
@@ -371,11 +388,16 @@ if (typeof Object.create !== 'function') {
                         post.name = element.name || "";
                         post.message = (text) ? text : '';
                         post.description = (element.description) ? element.description : '';
-                        post.link = (element.link) ? element.link : 'http://facebook.com/' + element.from.id;
+                        post.link = (element.link) ? element.link : 'http://facebook.com/' + element.id;
 
                         if (options.show_media === true) {
-                            if (element.picture) {
+                            if (typeof element.attachments.data[0].media !== 'undefined') {
                                 var attachment = Feed.facebook.utility.prepareAttachment(element);
+                                if (attachment) {
+                                    post.attachment = attachment;
+                                }
+                            } else if (typeof element.attachments.data[0].subattachments !== 'undefined') {
+                                var attachment = Feed.facebook.utility.prepareSubAttachment(element);
                                 if (attachment) {
                                     post.attachment = attachment;
                                 }
