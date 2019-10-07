@@ -8,6 +8,8 @@ resources:
       url: http://www.capmembers.com/aerospace_education
     - title: Coulter Airfield (KCFD)
       url: http://www.bryantx.gov/coulterairfield
+    - title: Easterwood Airport (KCLL)
+      url: https://flyeasterwood.com
     - title: Federal Aviation Administration (FAA)
       url: https://www.faa.gov
     - title: National Aeronautics and Space Administration (NASA)
