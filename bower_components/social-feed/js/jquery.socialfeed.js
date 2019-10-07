@@ -354,7 +354,7 @@ if (typeof Object.create !== 'function') {
                     getPosts: function(json) {
                         if (json['data']) {
                             json['data'].forEach(function(element) {
-                                if (element.message === null) {
+                                if (element.message != null) {
                                     var post = new SocialFeedPost('facebook', Feed.facebook.utility.unifyPostData(element));
                                     post.render();
                                 }
