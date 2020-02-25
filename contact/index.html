@@ -20,7 +20,9 @@ layout: page
 
 <p>{{ site.data.meeting.meeting_location_description }}</p>
 
-<iframe src="{{ site.data.meeting.meeting_location_map_url }}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="google-maps">
+	<iframe src="{{ site.data.meeting.meeting_location_map_url }}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
 
 {% include scripts.html %}
 <script>
