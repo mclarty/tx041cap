@@ -391,17 +391,19 @@ if (typeof Object.create !== 'function') {
                         post.link = (element.link) ? element.link : 'http://facebook.com/' + element.id;
 
                         if (options.show_media === true) {
-                            if (typeof element.attachments.data[0].media !== 'undefined') {
-                                var attachment = Feed.facebook.utility.prepareAttachment(element);
-                                if (attachment) {
-                                    post.attachment = attachment;
-                                }
-                            } else if (typeof element.attachments.data[0].subattachments !== 'undefined') {
-                                var attachment = Feed.facebook.utility.prepareSubAttachment(element);
-                                if (attachment) {
-                                    post.attachment = attachment;
-                                }
-                            }
+			    if (typeof element.attachments !== 'undefined') {
+                              if (typeof element.attachments.data[0].media !== 'undefined') {
+                                  var attachment = Feed.facebook.utility.prepareAttachment(element);
+                                  if (attachment) {
+                                      post.attachment = attachment;
+                                  }
+                              } else if (typeof element.attachments.data[0].subattachments !== 'undefined') {
+                                  var attachment = Feed.facebook.utility.prepareSubAttachment(element);
+                                  if (attachment) {
+                                      post.attachment = attachment;
+                                  }
+                              }
+			  }
                         }
                         return post;
                     }
